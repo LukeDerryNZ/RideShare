@@ -1,5 +1,2 @@
-UserID: Ljd77 
 Name:  Luke Derry
-StudentID: 38137963
-
-See the file 'Report.pdf' for implementation details.
+Project Details: A Ride Sharing System using Java/JavaFX
