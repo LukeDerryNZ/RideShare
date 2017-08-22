@@ -1,4 +1,4 @@
-# UC_RSS  
+# RideShare
 Ride Share System  
 
 Project Details: A Ride Sharing System using Java/JavaFX  
