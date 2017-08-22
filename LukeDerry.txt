@@ -1,2 +1,0 @@
-Name:  Luke Derry
-Project Details: A Ride Sharing System using Java/JavaFX
