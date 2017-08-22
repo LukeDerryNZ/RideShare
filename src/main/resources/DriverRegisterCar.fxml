@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverRegisterCarController">
+   <children>
+      <Label alignment="CENTER" layoutX="186.0" layoutY="23.0" text="Register Car" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button cancelButton="true" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#goToDriverHome" text="Back" AnchorPane.leftAnchor="14.0" />
+      <ComboBox fx:id="cb_CarType" layoutX="14.0" layoutY="68.0" prefHeight="25.0" prefWidth="129.0" promptText="Type" visibleRowCount="4">
+         <padding>
+            <Insets left="40.0" />
+         </padding></ComboBox>
+      <TextField fx:id="tf_Model" layoutX="14.0" layoutY="119.0" prefHeight="25.0" prefWidth="129.0" />
+      <TextField fx:id="tf_RegistrationNumber" layoutX="14.0" layoutY="162.0" prefHeight="25.0" prefWidth="129.0" />
+      <ComboBox fx:id="cb_Colour" layoutX="14.0" layoutY="206.0" prefHeight="25.0" prefWidth="129.0" promptText="Colour" visibleRowCount="4" AnchorPane.leftAnchor="14.0">
+         <padding>
+            <Insets left="38.0" />
+         </padding></ComboBox>
+      <ComboBox fx:id="cb_SeatNum" layoutX="228.0" layoutY="68.0" prefHeight="25.0" prefWidth="145.0" promptText="Seats" visibleRowCount="4">
+         <padding>
+            <Insets left="50.0" />
+         </padding></ComboBox>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="52.0" prefHeight="17.0" prefWidth="129.0" text="Select Car Type" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="104.0" prefHeight="17.0" prefWidth="129.0" text="Model" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="147.0" prefHeight="17.0" prefWidth="129.0" text="Registration Number" />
+      <TextField fx:id="tf_Year" layoutX="259.0" layoutY="119.0" prefHeight="25.0" prefWidth="82.0" />
+      <Label alignment="CENTER" layoutX="235.0" layoutY="104.0" prefHeight="17.0" prefWidth="129.0" text="Year" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="191.0" prefHeight="17.0" prefWidth="129.0" text="Select Colour" />
+      <Button defaultButton="true" layoutX="247.0" layoutY="261.0" mnemonicParsing="false" onAction="#registerCar" prefHeight="25.0" prefWidth="105.0" text="Register" />
+      <Label alignment="CENTER" layoutX="228.0" layoutY="52.0" prefHeight="17.0" prefWidth="145.0" text="Number Of Seats" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverEditTripStopTimesController">
+   <children>
+      <Label alignment="CENTER" layoutX="186.0" layoutY="23.0" text="Trip Stop Times" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToDriverCreateTrip" prefHeight="25.0" prefWidth="42.0" text="Back" AnchorPane.bottomAnchor="261.0" AnchorPane.rightAnchor="344.0" />
+      <TableView fx:id="tableID" layoutX="14.0" layoutY="55.0" prefHeight="231.0" prefWidth="267.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="55.0">
+         <columns>
+            <TableColumn fx:id="iNumber" editable="false" maxWidth="100.0" prefWidth="56.0" text="Number" />
+            <TableColumn fx:id="iStreet" editable="false" maxWidth="104.0" prefWidth="61.0" text="Street" />
+            <TableColumn fx:id="iSuburb" editable="false" maxWidth="114.0" prefWidth="69.0" text="Suburb" />
+            <TableColumn fx:id="iTime" maxWidth="185.0" text="Stop Time" />
+         </columns>
+      </TableView>
+      <Pane layoutX="286.0" layoutY="38.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="62.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="38.0">
+         <children>
+            <TextField fx:id="tf_EditTime" layoutX="9.0" layoutY="65.0" prefHeight="25.0" prefWidth="80.0" />
+            <Label alignment="CENTER" layoutX="25.0" layoutY="48.0" text="Edit Time" />
+            <Button layoutX="24.0" layoutY="133.0" mnemonicParsing="false" onAction="#clearEditTime" prefHeight="25.0" prefWidth="50.0" text="Clear" />
+            <Button layoutX="24.0" layoutY="100.0" mnemonicParsing="false" onAction="#setEditTime" prefHeight="25.0" prefWidth="50.0" text="Set" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

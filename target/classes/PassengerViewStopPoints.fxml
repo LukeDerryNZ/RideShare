@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PassengerViewStopPointsController">
+   <children>
+      <Label alignment="CENTER" layoutX="186.0" layoutY="23.0" text="View Stop Points" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button cancelButton="true" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#goToPassengerHome" text="Back" AnchorPane.leftAnchor="14.0" />
+      <TableView fx:id="tableID" layoutX="14.0" layoutY="49.0" prefHeight="237.0" prefWidth="213.0" style="-fx-border-color: gray;" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="173.0" AnchorPane.topAnchor="49.0">
+        <columns>
+          <TableColumn fx:id="iNumber" editable="false" maxWidth="100.0" prefWidth="54.0" text="Number" />
+          <TableColumn fx:id="iStreet" editable="false" maxWidth="182.0" prefWidth="79.0" text="Street" />
+            <TableColumn fx:id="iSuburb" editable="false" maxWidth="237.0" minWidth="6.0" prefWidth="78.0" text="Suburb" />
+        </columns>
+      </TableView>
+      <Pane layoutX="243.0" layoutY="50.0" prefHeight="199.0" prefWidth="140.0" style="-fx-border-color: grey;">
+         <children>
+            <TextField fx:id="tf_Number" layoutX="40.0" layoutY="26.0" prefHeight="25.0" prefWidth="60.0" />
+            <Label layoutX="48.0" layoutY="9.0" text="Number" />
+            <Label layoutX="55.0" layoutY="59.0" text="Street" />
+            <TextField fx:id="tf_Street" layoutX="17.0" layoutY="76.0" onMouseClicked="#search" prefHeight="25.0" prefWidth="107.0" />
+            <TextField fx:id="tf_Suburb" layoutX="17.0" layoutY="124.0" prefHeight="25.0" prefWidth="107.0" />
+            <Label layoutX="51.0" layoutY="107.0" text="Suburb" />
+            <Button cancelButton="true" layoutX="18.0" layoutY="160.0" mnemonicParsing="false" onAction="#clearSearch" prefHeight="25.0" prefWidth="44.0" text="Clear" />
+            <Button cancelButton="true" layoutX="69.0" layoutY="160.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="53.0" text="Search" />
+         </children>
+      </Pane>
+      <Button cancelButton="true" layoutX="251.0" layoutY="261.0" mnemonicParsing="false" onAction="#goToPassengerViewRides" prefHeight="25.0" prefWidth="124.0" text="Find Ride" />
+   </children>
+</AnchorPane>

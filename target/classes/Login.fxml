@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Button layoutX="14.0" layoutY="225.0" mnemonicParsing="false" onAction="#goToDriverHome" prefHeight="25.0" prefWidth="129.0" text="Login As Driver" />
+      <Label alignment="CENTER" prefHeight="17.0" prefWidth="84.0" text="Please Log in." textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button layoutX="14.0" layoutY="261.0" mnemonicParsing="false" onAction="#goToPassengerHome" prefHeight="25.0" prefWidth="129.0" text="Login As Passenger" />
+      <Pane layoutX="14.0" layoutY="33.0" prefHeight="181.0" prefWidth="129.0">
+         <children>
+            <TextField fx:id="tf_username" layoutY="78.0" prefHeight="25.0" prefWidth="129.0">
+               <effect>
+                  <InnerShadow blurType="ONE_PASS_BOX" height="9.0" radius="4.0" width="9.0" />
+               </effect></TextField>
+            <PasswordField layoutY="142.0" prefHeight="25.0" prefWidth="129.0">
+               <effect>
+                  <InnerShadow blurType="ONE_PASS_BOX" height="9.0" radius="4.0" width="9.0" />
+               </effect></PasswordField>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="61.0" prefHeight="17.0" prefWidth="75.0" text="UserName" textAlignment="CENTER" />
+            <Label alignment="CENTER" layoutX="27.0" layoutY="125.0" prefHeight="17.0" prefWidth="75.0" text="Password" textAlignment="CENTER" />
+         </children>
+      </Pane>
+      <Label fx:id="lb_VERSIONID" layoutX="191.0" layoutY="265.0" prefHeight="17.0" prefWidth="174.0" underline="true">
+         <effect>
+            <Reflection fraction="0.58" topOffset="-5.0" topOpacity="0.55" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

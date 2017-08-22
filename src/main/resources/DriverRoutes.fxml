@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverRoutesController">
+   <children>
+      <Label alignment="CENTER" layoutX="186.0" layoutY="23.0" text="Routes" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button cancelButton="true" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#goToDriverHome" text="Back" AnchorPane.leftAnchor="14.0" />
+      <TableView fx:id="tableID" layoutX="14.0" layoutY="49.0" prefHeight="237.0" prefWidth="171.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="215.0" AnchorPane.topAnchor="49.0">
+         <columns>
+            <TableColumn fx:id="iRouteID" prefWidth="170.0" text="Routes" />
+         </columns>
+      </TableView>
+      <Button layoutX="266.0" layoutY="226.0" mnemonicParsing="false" onAction="#deleteSelectedRoute" prefHeight="25.0" prefWidth="123.0" text="Delete Selected" />
+      <Button defaultButton="true" layoutX="266.0" layoutY="261.0" mnemonicParsing="false" onAction="#goToDriverCreateRoute" prefHeight="25.0" prefWidth="123.0" text="Create New Route" />
+   </children>
+</AnchorPane>

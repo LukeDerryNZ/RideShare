@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverCreateRoutesController">
+   <children>
+      <Label alignment="CENTER" layoutX="186.0" layoutY="23.0" text="Create Route" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#goToDriverHome" text="Back" AnchorPane.leftAnchor="14.0" />
+      <TableView fx:id="leftTable" layoutX="14.0" layoutY="49.0" prefHeight="204.0" prefWidth="202.0" AnchorPane.bottomAnchor="47.0" AnchorPane.rightAnchor="184.0" AnchorPane.topAnchor="49.0">
+        <columns>
+          <TableColumn fx:id="iNumber" editable="false" maxWidth="100.0" prefWidth="56.0" text="Number" />
+          <TableColumn fx:id="iStreet" editable="false" maxWidth="104.0" prefWidth="79.0" text="Street" />
+            <TableColumn fx:id="iSuburb" editable="false" maxWidth="112.0" prefWidth="66.0" text="Suburb" />
+        </columns>
+      </TableView>
+      <Button layoutX="221.0" layoutY="93.0" mnemonicParsing="false" onAction="#addToSelectionTable" prefHeight="25.0" prefWidth="25.0" text="&gt;" AnchorPane.bottomAnchor="182.0" AnchorPane.leftAnchor="221.0" />
+      <Label alignment="CENTER" layoutX="251.0" layoutY="30.0" prefHeight="17.0" prefWidth="135.0" text="Selected Stop Points" textAlignment="CENTER" textOverrun="CLIP" />
+      <TableView fx:id="rightTable" layoutX="251.0" layoutY="49.0" prefHeight="204.0" prefWidth="135.0">
+         <columns>
+            <TableColumn fx:id="iAddress" editable="false" maxWidth="146.0" prefWidth="134.0" text="Stop Points" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="221.0" layoutY="125.0" mnemonicParsing="false" onAction="#removeFromSelectionTable" prefHeight="25.0" prefWidth="25.0" text="&lt;" />
+      <Button layoutX="251.0" layoutY="261.0" mnemonicParsing="false" onAction="#createRoute" prefHeight="25.0" prefWidth="135.0" text="Create Route" />
+      <TextField fx:id="tf_routeID" layoutX="81.0" layoutY="261.0" prefHeight="25.0" prefWidth="135.0" />
+      <Label layoutX="21.0" layoutY="265.0" prefHeight="17.0" prefWidth="52.0" text="Route ID" />
+   </children>
+</AnchorPane>

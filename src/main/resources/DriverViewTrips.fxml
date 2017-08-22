@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverViewTripsController">
+   <children>
+      <Label alignment="CENTER" layoutX="186.0" layoutY="23.0" text="View Trips" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button cancelButton="true" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#goToDriverHome" text="Back" AnchorPane.leftAnchor="14.0" />
+      <Button cancelButton="true" layoutX="305.0" layoutY="263.0" mnemonicParsing="false" onAction="#goToDriverCreateTrip" prefHeight="25.0" prefWidth="81.0" text="Create New" />
+      <TableView fx:id="tableID" layoutX="14.0" layoutY="50.0" prefHeight="238.0" prefWidth="279.0">
+        <columns>
+          <TableColumn fx:id="iTripID" prefWidth="70.0" text="Trip ID" />
+            <TableColumn fx:id="iRouteID" prefWidth="77.0" text="Route ID" />
+            <TableColumn fx:id="iCar" prefWidth="68.0" text="Car" />
+            <TableColumn fx:id="iDirection" prefWidth="63.0" text="TO/FROM" />
+        </columns>
+      </TableView>
+      <ListView fx:id="lv_availableDates" layoutX="305.0" layoutY="83.0" prefHeight="166.0" prefWidth="81.0" />
+      <Label alignment="CENTER" layoutX="305.0" layoutY="60.0" text="Available Dates" />
+   </children>
+</AnchorPane>
